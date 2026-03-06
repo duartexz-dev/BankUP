@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.div-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.a {
+  text-decoration: none;
+  color: white;
+}
