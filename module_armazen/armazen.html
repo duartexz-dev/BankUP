@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEU CSS BASE -->
+    <link rel="stylesheet" href="armazen.css">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Armazém - BankUP</title>
+</head>
+
+<body>
+
+    <!-- NAVBAR (IGUAL HOME) -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+            <a style="border-bottom: solid;" class="navbar-brand" href="../">BankUP</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a style="border: solid; border-radius: 50px; margin: 10px;" class="nav-link active" href="../">
+                            Voltar Home
+                        </a>
+                    </li>
+
+                </ul>
+
+                <!-- PERFIL -->
+                <div class="d-flex align-items-center gap-2">
+
+                    <img class="img-perfil" src="https://cdn.pixabay.com/photo/2016/09/28/02/14/user-1699635_1280.png"
+                        width="40">
+
+                    <div>
+                        <h6 id="res2"></h6>
+                        <h6 id="res3"></h6>
+                        <h6 id="res4"></h6>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- TÍTULO -->
+    <div class="text-center mt-4">
+        <h2>📦 Sistema de Armazém</h2>
+        <p>Gerencie seus produtos de forma simples</p>
+    </div>
+
+    <!-- ÁREA PRINCIPAL -->
+    <div class="div-login">
+
+        <div class="login">
+
+            <!-- ADD PRODUTO -->
+            <h4>Adicionar Produto</h4>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text">📦</span>
+                <input id="produto" type="text" class="form-control" placeholder="Nome do produto">
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text">🔢</span>
+                <input id="quantidade" type="number" class="form-control" placeholder="Quantidade">
+            </div>
+
+            <div class="div-btn">
+                <button class="btn btn-primary" onclick="adicionarProduto()">
+                    ➕ Adicionar
+                </button>
+            </div>
+
+            <hr style="width:100%;">
+
+            <!-- LISTA -->
+            <h4>Produtos Armazenados</h4>
+
+            <ul id="lista" class="list-group"></ul>
+
+        </div>
+
+    </div>
+
+    <!-- INFO EXTRA (IGUAL HOME) -->
+    <div class="accordion" id="accordionArmazen">
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#info1">
+                    Como usar o sistema?
+                </button>
+            </h2>
+
+            <div id="info1" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                    Adicione produtos com nome e quantidade. Eles serão salvos automaticamente e você poderá remover
+                    quando quiser.
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- BOTÃO EXTRA -->
+    <div class="div-btn">
+        <button class="btn btn-primary">
+            <a class="a" href="../">Voltar para Home</a>
+        </button>
+    </div>
+
+    <!-- FOOTER (IGUAL HOME) -->
+    <footer>
+        <nav class="navbar bg-dark">
+            <div class="container-fluid justify-content-center">
+
+                <span class="navbar-text text-white">
+                    © 2026 Sistema Armazém | Desenvolvido por Arthur Duarte |
+                    GitHub:
+                    <a class="text-white" href="https://github.com/duartexz-dev" target="_blank">
+                        github.com/duartexz-dev
+                    </a>
+                </span>
+
+            </div>
+        </nav>
+    </footer>
+
+    <!-- JS -->
+    <script src="armazen.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
